@@ -3,7 +3,7 @@
     "m_SelectedPackage": {
         "deviceId": "1WMHH847V71166",
         "name": "com.lopez.BreezyFarm",
-        "processId": 9202,
+        "processId": 11512,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -11,7 +11,109 @@
         {
             "deviceId": "1WMHH847V71166",
             "name": "com.lopez.BreezyFarm",
-            "processId": 9202,
+            "processId": 11063,
+            "exited": true
+        },
+        {
+            "deviceId": "1WMHH847V71166",
+            "name": "com.lopez.BreezyFarm",
+            "processId": 12612,
+            "exited": true
+        },
+        {
+            "deviceId": "1WMHH847V71166",
+            "name": "com.lopez.BreezyFarm",
+            "processId": 13575,
+            "exited": true
+        },
+        {
+            "deviceId": "1WMHH847V71166",
+            "name": "com.lopez.BreezyFarm",
+            "processId": 14366,
+            "exited": true
+        },
+        {
+            "deviceId": "1WMHH847V71166",
+            "name": "com.lopez.BreezyFarm",
+            "processId": 15686,
+            "exited": true
+        },
+        {
+            "deviceId": "1WMHH847V71166",
+            "name": "com.oculus.os.clearactivity",
+            "processId": 14594,
+            "exited": false
+        },
+        {
+            "deviceId": "1WMHH847V71166",
+            "name": "com.lopez.BreezyFarm",
+            "processId": 17123,
+            "exited": false
+        },
+        {
+            "deviceId": "1WMHH847V71166",
+            "name": "com.lopez.BreezyFarm",
+            "processId": 18717,
+            "exited": false
+        },
+        {
+            "deviceId": "1WMHH847V71166",
+            "name": "com.lopez.BreezyFarm",
+            "processId": 19534,
+            "exited": false
+        },
+        {
+            "deviceId": "1WMHH847V71166",
+            "name": "com.lopez.BreezyFarm",
+            "processId": 20115,
+            "exited": false
+        },
+        {
+            "deviceId": "1WMHH847V71166",
+            "name": "com.lopez.BreezyFarm",
+            "processId": 20642,
+            "exited": false
+        },
+        {
+            "deviceId": "1WMHH847V71166",
+            "name": "com.lopez.BreezyFarm",
+            "processId": 21101,
+            "exited": false
+        },
+        {
+            "deviceId": "1WMHH847V71166",
+            "name": "com.lopez.BreezyFarm",
+            "processId": 5433,
+            "exited": false
+        },
+        {
+            "deviceId": "1WMHH847V71166",
+            "name": "com.lopez.BreezyFarm",
+            "processId": 6756,
+            "exited": false
+        },
+        {
+            "deviceId": "1WMHH847V71166",
+            "name": "com.lopez.BreezyFarm",
+            "processId": 7603,
+            "exited": false
+        },
+        {
+            "deviceId": "1WMHH847V71166",
+            "name": "com.lopez.BreezyFarm",
+            "processId": 8678,
+            "exited": false
+        },
+        {
+            "deviceId": "1WMHH847V71166",
+            "name": "com.lopez.BreezyFarm",
+            "processId": 11010,
+            "exited": false
+        },
+        {
+            "deviceId": "1WMHH847V71166",
+            "name": "com.lopez.BreezyFarm",
+            "processId": 11512,
             "exited": false
         }
     ],
@@ -65,7 +167,7 @@
         "MemoryGroup": 2,
         "Behavior": 0
     },
-    "m_Filter": "",
+    "m_Filter": "DebugLog",
     "m_FilterIsRegularExpression": false,
     "m_SymbolPaths": []
 }

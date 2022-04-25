@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class RoomScaleController : MonoBehaviour
 {
@@ -19,6 +20,7 @@ public class RoomScaleController : MonoBehaviour
 
     public Transform cameraAnchor;
     public CapsuleCollider player;
+    public TextMeshProUGUI debugText;
 
     // Start is called before the first frame update
     private void Start()
@@ -73,9 +75,9 @@ public class RoomScaleController : MonoBehaviour
 
         playerPos = cameraAnchor.localPosition;
         playerPos.y = cameraAnchor.localPosition.y * yOffSet;
-        player.transform.localPosition = playerPos;
+        player.transform.position = playerPos;
         player.height = cameraAnchor.localPosition.y * heightOffSet;
-
+        //debugText.text = player.transform.position.ToString();
         //checkJump();
     }
 }

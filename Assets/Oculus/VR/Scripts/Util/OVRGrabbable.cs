@@ -33,7 +33,6 @@ public class OVRGrabbable : MonoBehaviour
     protected Collider m_grabbedCollider = null;
     protected OVRGrabber m_grabbedBy = null;
 
-    public Material highlight;
     private Material originalMaterial;
 
     /// <summary>
