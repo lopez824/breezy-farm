@@ -6,18 +6,19 @@ using TMPro;
 public class ScoreSystem : MonoBehaviour
 {
     public Timer timer;
-    public TextMeshProUGUI bestTimeText;
+    public TextMeshProUGUI personalRecordText;
+    public TextMeshProUGUI worldRecordText;
     private GameObject[] piggies;
     private int piggyCount = 0;
 
     private void Start()
     {
-        PlayerPrefs.DeleteAll();
-        if (!PlayerPrefs.HasKey("BestTime"))
-            PlayerPrefs.SetString("BestTime", "0:00");
-        if (!PlayerPrefs.HasKey("NewRecord"))
-            PlayerPrefs.SetFloat("NewRecord", Mathf.Infinity);
-        bestTimeText.text = PlayerPrefs.GetString("BestTime");
+        if (!PlayerPrefs.HasKey("WorldDisplay"))
+            PlayerPrefs.SetString("WorldDisplay", "0:00");
+        if (!PlayerPrefs.HasKey("WorldRecord"))
+            PlayerPrefs.SetFloat("WorldRecord", Mathf.Infinity);
+        personalRecordText.text = "0:00";
+        worldRecordText.text = PlayerPrefs.GetString("WorldDisplay");
         piggies = GameObject.FindGameObjectsWithTag("Piggy");
     }
 
@@ -33,11 +34,12 @@ public class ScoreSystem : MonoBehaviour
             {
                 float finalTime = timer.currentTime;
                 string finalTimeString = timer.GetDisplayTime(finalTime);
-                if (finalTime < PlayerPrefs.GetFloat("NewRecord"))
+                personalRecordText.text = finalTimeString;
+                if (finalTime < PlayerPrefs.GetFloat("WorldRecord"))
                 {
-                    PlayerPrefs.SetFloat("NewRecord", finalTime);
-                    PlayerPrefs.SetString("BestTime", finalTimeString);
-                    bestTimeText.text = PlayerPrefs.GetString("BestTime");
+                    PlayerPrefs.SetFloat("WorldRecord", finalTime);
+                    PlayerPrefs.SetString("WorldDisplay", finalTimeString);
+                    worldRecordText.text = PlayerPrefs.GetString("WorldDisplay");
                 }
             }
         }

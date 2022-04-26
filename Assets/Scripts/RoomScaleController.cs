@@ -71,9 +71,8 @@ public class RoomScaleController : MonoBehaviour
     //}
 
     // Updates collider height every frame to match headset height.
-    private void LateUpdate()
+    private void Update()
     {
-
         playerPos = cameraAnchor.localPosition;
         playerPos.y = cameraAnchor.localPosition.y * yOffSet;
         playerRot = cameraAnchor.localRotation;
