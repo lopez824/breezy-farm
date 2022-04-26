@@ -7,14 +7,19 @@ public class Roaming : State
     public Roaming(GameObject _npc, Animator _anim, Transform _player, GameObject[] _waypoints) : base(_npc, _anim, _player, _waypoints)
     {
         name = STATE.ROAMING;
-        speed = 2;
+        speed = 1;
     }
 
     public override void Enter()
     {
         // play roaming animation
         // anim.SetTrigger();
-        currentPoint = Random.Range(0, waypoints.Length - 1);
+        Debug.Log("DebugLog - Roaming");
+        if (ai.GetComponent<AI>().inPen == true)
+            currentPoint = Random.Range(0, ai.GetComponent<AI>().penWaypoints.Length - 1);
+        else
+            currentPoint = Random.Range(0, waypoints.Length - 1);
+
         base.Enter();
     }
 
@@ -26,13 +31,18 @@ public class Roaming : State
             stage = EVENT.EXIT;
         }
 
-        if (CanSeePlayer() == true)
+        if (ai.GetComponent<AI>().inPen == true)
+            destination = ai.GetComponent<AI>().penWaypoints[currentPoint].transform.localPosition;
+        else
         {
-            nextState = new Fleeing(ai, anim, player, waypoints);      // randomly decide when to roam
-            stage = EVENT.EXIT;
+            if (CanSeePlayer() == true)
+            {
+                nextState = new Fleeing(ai, anim, player, waypoints);      // randomly decide when to roam
+                stage = EVENT.EXIT;
+            }
+            destination = waypoints[currentPoint].transform.position;
         }
 
-        destination = waypoints[currentPoint].transform.position;
         MoveTo(destination);
 
         if (GetDistanceTo(destination) < 1)
@@ -44,12 +54,17 @@ public class Roaming : State
                 stage = EVENT.EXIT;
             }
 
-            if (currentPoint == 0 || currentPoint == 1)
-                currentPoint = Random.Range(2, 6);
-            else if (currentPoint == waypoints.Length - 1 || currentPoint == waypoints.Length - 2)
-                currentPoint = Random.Range(10, 14);
+            if (ai.GetComponent<AI>().inPen == true)
+                currentPoint = Random.Range(0, ai.GetComponent<AI>().penWaypoints.Length - 1);
             else
-                currentPoint = Random.Range(0, waypoints.Length - 1);
+            {
+                if (currentPoint == 0 || currentPoint == 1)
+                    currentPoint = Random.Range(2, 6);
+                else if (currentPoint == waypoints.Length - 1 || currentPoint == waypoints.Length - 2)
+                    currentPoint = Random.Range(10, 14);
+                else
+                    currentPoint = Random.Range(0, waypoints.Length - 1);
+            }
         }
     }
 

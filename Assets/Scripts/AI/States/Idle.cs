@@ -26,7 +26,7 @@ public class Idle : State
             stage = EVENT.EXIT;
         }
 
-        if (CanSeePlayer() == true)
+        if (CanSeePlayer() == true && ai.GetComponent<AI>().inPen == false)
         {
             nextState = new Fleeing(ai, anim, player, waypoints);      // randomly decide when to roam
             stage = EVENT.EXIT;

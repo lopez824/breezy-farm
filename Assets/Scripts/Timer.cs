@@ -9,7 +9,7 @@ using TMPro;
 /// </summary>
 public class Timer : MonoBehaviour
 {
-    public static float timeRemaining = 90;      // measured in seconds
+    public float currentTime = 0;      // measured in seconds
     public bool timerPaused;
     private bool isTimerRunning = false;
 
@@ -19,6 +19,14 @@ public class Timer : MonoBehaviour
     void Start()
     {
         isTimerRunning = true;
+    }
+
+    public string GetDisplayTime(float time)
+    {
+        time += 1;      // offset for flooring
+        float minutes = Mathf.FloorToInt(time / 60);
+        float seconds = Mathf.FloorToInt(time % 60);
+        return string.Format("{0:00}:{1:00}", minutes, seconds);
     }
 
     /// <summary>
@@ -36,16 +44,8 @@ public class Timer : MonoBehaviour
     {
         if (isTimerRunning)
         {
-            if (timeRemaining > 0 && timerPaused == false)
-            {
-                timeRemaining -= Time.deltaTime;
-                DisplayTime(timeRemaining);
-            }
-            else if (timeRemaining <= 0)
-            {
-                timeRemaining = 0;
-                isTimerRunning = false;
-            }
+            currentTime += Time.deltaTime;
+            DisplayTime(currentTime);
         }
     }
 }

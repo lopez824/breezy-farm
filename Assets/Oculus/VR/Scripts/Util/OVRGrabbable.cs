@@ -114,7 +114,10 @@ public class OVRGrabbable : MonoBehaviour
     {
         m_grabbedBy = hand;
         m_grabbedCollider = grabPoint;
-        m_grabbedCollider.gameObject.GetComponent<MeshRenderer>().material = originalMaterial;
+        if (m_grabbedCollider.gameObject.tag == "Piggy")
+            m_grabbedCollider.gameObject.GetComponentInChildren<SkinnedMeshRenderer>().material = originalMaterial;
+        else
+            m_grabbedCollider.gameObject.GetComponent<MeshRenderer>().material = originalMaterial;
         gameObject.GetComponent<Rigidbody>().isKinematic = true;
     }
 
@@ -133,7 +136,10 @@ public class OVRGrabbable : MonoBehaviour
 
     void Awake()
     {
-        originalMaterial = GetComponent<MeshRenderer>().material;
+        if (gameObject.tag == "Piggy")
+            originalMaterial = GetComponentInChildren<SkinnedMeshRenderer>().material;
+        else
+            originalMaterial = GetComponent<MeshRenderer>().material;
         if (m_grabPoints.Length == 0)
         {
             // Get the collider from the grabbable

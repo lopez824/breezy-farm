@@ -6,10 +6,13 @@ public class AI : MonoBehaviour
 {
     public Transform player;
     public GameObject[] waypoints;
+    public GameObject[] penWaypoints;
     [HideInInspector]
     public bool isHeld = false;
     [HideInInspector]
     public bool onLand = true;
+    [HideInInspector]
+    public bool inPen = false;
     private Animator anim;
     private State currentState;
     private OVRGrabbable ovrGrabbable;

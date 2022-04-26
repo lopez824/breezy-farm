@@ -3,7 +3,7 @@
     "m_SelectedPackage": {
         "deviceId": "1WMHH847V71166",
         "name": "com.lopez.BreezyFarm",
-        "processId": 11512,
+        "processId": 30977,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -115,6 +115,102 @@
             "name": "com.lopez.BreezyFarm",
             "processId": 11512,
             "exited": false
+        },
+        {
+            "deviceId": "1WMHH847V71166",
+            "name": "com.lopez.BreezyFarm",
+            "processId": 13300,
+            "exited": false
+        },
+        {
+            "deviceId": "1WMHH847V71166",
+            "name": "com.lopez.BreezyFarm",
+            "processId": 13880,
+            "exited": false
+        },
+        {
+            "deviceId": "1WMHH847V71166",
+            "name": "com.lopez.BreezyFarm",
+            "processId": 14466,
+            "exited": false
+        },
+        {
+            "deviceId": "1WMHH847V71166",
+            "name": "com.lopez.BreezyFarm",
+            "processId": 17524,
+            "exited": false
+        },
+        {
+            "deviceId": "1WMHH847V71166",
+            "name": "com.lopez.BreezyFarm",
+            "processId": 19021,
+            "exited": false
+        },
+        {
+            "deviceId": "1WMHH847V71166",
+            "name": "com.lopez.BreezyFarm",
+            "processId": 20290,
+            "exited": false
+        },
+        {
+            "deviceId": "1WMHH847V71166",
+            "name": "com.lopez.BreezyFarm",
+            "processId": 20911,
+            "exited": false
+        },
+        {
+            "deviceId": "1WMHH847V71166",
+            "name": "com.lopez.BreezyFarm",
+            "processId": 21678,
+            "exited": false
+        },
+        {
+            "deviceId": "1WMHH847V71166",
+            "name": "com.lopez.BreezyFarm",
+            "processId": 23030,
+            "exited": false
+        },
+        {
+            "deviceId": "1WMHH847V71166",
+            "name": "com.lopez.BreezyFarm",
+            "processId": 23667,
+            "exited": false
+        },
+        {
+            "deviceId": "1WMHH847V71166",
+            "name": "com.lopez.BreezyFarm",
+            "processId": 25410,
+            "exited": false
+        },
+        {
+            "deviceId": "1WMHH847V71166",
+            "name": "com.lopez.BreezyFarm",
+            "processId": 27455,
+            "exited": false
+        },
+        {
+            "deviceId": "1WMHH847V71166",
+            "name": "com.lopez.BreezyFarm",
+            "processId": 28767,
+            "exited": false
+        },
+        {
+            "deviceId": "1WMHH847V71166",
+            "name": "com.lopez.BreezyFarm",
+            "processId": 29541,
+            "exited": false
+        },
+        {
+            "deviceId": "1WMHH847V71166",
+            "name": "com.lopez.BreezyFarm",
+            "processId": 30302,
+            "exited": false
+        },
+        {
+            "deviceId": "1WMHH847V71166",
+            "name": "com.lopez.BreezyFarm",
+            "processId": 30977,
+            "exited": false
         }
     ],
     "m_Tags": {
@@ -167,7 +263,7 @@
         "MemoryGroup": 2,
         "Behavior": 0
     },
-    "m_Filter": "DebugLog",
+    "m_Filter": "",
     "m_FilterIsRegularExpression": false,
     "m_SymbolPaths": []
 }

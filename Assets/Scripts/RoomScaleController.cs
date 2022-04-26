@@ -9,6 +9,7 @@ public class RoomScaleController : MonoBehaviour
     private IEnumerator jumpRoutine;
 
     private Vector3 playerPos; // keeps track of head set position.
+    private Quaternion playerRot;
     private float delay = 2.0f; // arbitrary time for player to stand straight and record height.
     private float airTime = 2.0f; // generous amount of seconds for a jump.
     private float yOffSet = 0.5f; // used to position collider's origin to half of the headset's height.

@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Grab
   - Ground
+  - Piggy
   layers:
   - Default
   - TransparentFX

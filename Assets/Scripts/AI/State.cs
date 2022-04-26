@@ -17,8 +17,8 @@ public class State
 
     public Vector3 destination;
     public int currentPoint = 0;
-    public float escapeDistance = 5f;
-    public float visualDistance = 2.5f;
+    public float escapeDistance = 3f;
+    public float visualDistance = 2f;
     public float visualAngle = 30f;
     public float speed = 1f;
     public float turnSpeed = 5f;
