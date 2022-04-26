@@ -71,12 +71,14 @@ public class RoomScaleController : MonoBehaviour
     //}
 
     // Updates collider height every frame to match headset height.
-    private void FixedUpdate()
+    private void LateUpdate()
     {
 
         playerPos = cameraAnchor.localPosition;
         playerPos.y = cameraAnchor.localPosition.y * yOffSet;
+        playerRot = cameraAnchor.localRotation;
         player.transform.position = playerPos;
+        player.transform.rotation = playerRot;
         player.height = cameraAnchor.localPosition.y * heightOffSet;
         //debugText.text = player.transform.position.ToString();
         //checkJump();

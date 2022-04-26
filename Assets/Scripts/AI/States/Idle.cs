@@ -12,8 +12,8 @@ public class Idle : State
     public override void Enter()
     {
         // play idle animation
-        // anim.SetTrigger();
         Debug.Log("DebugLog - Idle");
+        anim.SetTrigger("isIdle");
         base.Enter();
     }
 
@@ -32,7 +32,7 @@ public class Idle : State
             stage = EVENT.EXIT;
         }
 
-        if (Random.Range(0,100) < 1f)
+        if (Random.Range(0,1000) < 1f)
         {
             nextState = new Roaming(ai, anim, player, waypoints);      // randomly decide when to roam
             stage = EVENT.EXIT;
@@ -42,7 +42,7 @@ public class Idle : State
     public override void Exit()
     {
         // reset idle animation
-        // anim.ResetTrigger();
+        anim.ResetTrigger("isIdle");
         base.Exit();
     }
 }

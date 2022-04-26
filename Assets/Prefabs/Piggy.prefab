@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 6730347664301230733}
   - component: {fileID: 7131942951322323351}
   - component: {fileID: 2932512981542194572}
-  - component: {fileID: -2170983835043999768}
   m_Layer: 0
   m_Name: Piggy
   m_TagString: Grab
@@ -117,25 +116,6 @@ MonoBehaviour:
   isHeld: 0
   onLand: 1
   inPen: 0
---- !u!95 &-2170983835043999768
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1301302682828881232}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: c1743a2a86bbf4744b735916ed0deb2e, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &4556143696150991112
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -193,8 +173,32 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 739e9a9b17d84984eb8e8e32f0f03506, type: 3}
+--- !u!1 &3745804517216234585 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 739e9a9b17d84984eb8e8e32f0f03506, type: 3}
+  m_PrefabInstance: {fileID: 4556143696150991112}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4084788983166039779 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 739e9a9b17d84984eb8e8e32f0f03506, type: 3}
   m_PrefabInstance: {fileID: 4556143696150991112}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &6631091044460164551
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3745804517216234585}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c1743a2a86bbf4744b735916ed0deb2e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

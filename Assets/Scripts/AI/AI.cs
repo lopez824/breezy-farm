@@ -20,7 +20,7 @@ public class AI : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        anim = GetComponent<Animator>();
+        anim = GetComponentInChildren<Animator>();
         ovrGrabbable = GetComponent<OVRGrabbable>();
         currentState = new Idle(gameObject, anim, player, waypoints);
     }

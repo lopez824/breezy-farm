@@ -13,7 +13,7 @@ public class Roaming : State
     public override void Enter()
     {
         // play roaming animation
-        // anim.SetTrigger();
+        anim.SetTrigger("isWalking");
         Debug.Log("DebugLog - Roaming");
         if (ai.GetComponent<AI>().inPen == true)
             currentPoint = Random.Range(0, ai.GetComponent<AI>().penWaypoints.Length - 1);
@@ -71,7 +71,7 @@ public class Roaming : State
     public override void Exit()
     {
         // reset roaming animation
-        // anim.ResetTrigger();
+        anim.ResetTrigger("isWalking");
         base.Exit();
     }
 }
