@@ -5,6 +5,8 @@ using UnityEngine;
 public class AI : MonoBehaviour
 {
     public Transform player;
+    public Animator anim;
+    public Animator exclamAnim;
     public GameObject[] waypoints;
     public GameObject[] penWaypoints;
     [HideInInspector]
@@ -13,15 +15,13 @@ public class AI : MonoBehaviour
     public bool onLand = true;
     [HideInInspector]
     public bool inPen = false;
-    [HideInInspector]
-    private Animator anim;
+    
     private State currentState;
     private OVRGrabbable ovrGrabbable;
 
     // Start is called before the first frame update
     void Start()
     {
-        anim = GetComponentInChildren<Animator>();
         ovrGrabbable = GetComponent<OVRGrabbable>();
         currentState = new Idle(gameObject, anim, player, waypoints);
     }

@@ -32,7 +32,7 @@ public class Idle : State
             stage = EVENT.EXIT;
         }
 
-        if (Random.Range(0,1000) < 1f)
+        if (Random.Range(0,5000) < 10f)
         {
             nextState = new Roaming(ai, anim, player, waypoints);      // randomly decide when to roam
             stage = EVENT.EXIT;

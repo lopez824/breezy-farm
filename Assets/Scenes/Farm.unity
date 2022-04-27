@@ -203,7 +203,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5848076533691757917, guid: d0377a811c2a95841ba015ae0b2c8d45, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5848076533691757919, guid: d0377a811c2a95841ba015ae0b2c8d45, type: 3}
       propertyPath: m_RootOrder
@@ -634,7 +634,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!81 &87237201
 AudioListener:
   m_ObjectHideFlags: 0
@@ -2101,13 +2101,17 @@ PrefabInstance:
       propertyPath: m_parentTransform
       value: 
       objectReference: {fileID: 1634418699}
+    - target: {fileID: 3719661355016902439, guid: e221768b7e4c44d47916a406ceb0ee9b, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3719661355016902456, guid: e221768b7e4c44d47916a406ceb0ee9b, type: 3}
       propertyPath: m_Name
       value: HandCollider
       objectReference: {fileID: 0}
     - target: {fileID: 3719661355016902456, guid: e221768b7e4c44d47916a406ceb0ee9b, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3719661355016902457, guid: e221768b7e4c44d47916a406ceb0ee9b, type: 3}
       propertyPath: m_RootOrder
@@ -6003,7 +6007,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1557028345
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8720,13 +8724,17 @@ PrefabInstance:
       propertyPath: m_parentTransform
       value: 
       objectReference: {fileID: 1634418698}
+    - target: {fileID: 3719661355016902439, guid: e221768b7e4c44d47916a406ceb0ee9b, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3719661355016902456, guid: e221768b7e4c44d47916a406ceb0ee9b, type: 3}
       propertyPath: m_Name
       value: HandCollider
       objectReference: {fileID: 0}
     - target: {fileID: 3719661355016902456, guid: e221768b7e4c44d47916a406ceb0ee9b, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3719661355016902457, guid: e221768b7e4c44d47916a406ceb0ee9b, type: 3}
       propertyPath: m_RootOrder
@@ -9506,7 +9514,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6296456603426100610, guid: 7549852c34a375e43a571ad9b56c07e5, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 6296456603426100610, guid: 7549852c34a375e43a571ad9b56c07e5, type: 3}
       propertyPath: m_LocalPosition.y
@@ -9514,7 +9522,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6296456603426100610, guid: 7549852c34a375e43a571ad9b56c07e5, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.5
+      value: -2
       objectReference: {fileID: 0}
     - target: {fileID: 6296456603426100610, guid: 7549852c34a375e43a571ad9b56c07e5, type: 3}
       propertyPath: m_LocalRotation.w

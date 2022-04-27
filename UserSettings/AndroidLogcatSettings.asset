@@ -1,9 +1,9 @@
 {
     "m_SelectedDeviceId": "1WMHH847V71166",
     "m_SelectedPackage": {
-        "deviceId": "1WMHH847V71166",
-        "name": "com.lopez.BreezyFarm",
-        "processId": 30977,
+        "deviceId": "",
+        "name": "",
+        "processId": 0,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -11,205 +11,37 @@
         {
             "deviceId": "1WMHH847V71166",
             "name": "com.lopez.BreezyFarm",
-            "processId": 11063,
-            "exited": true
-        },
-        {
-            "deviceId": "1WMHH847V71166",
-            "name": "com.lopez.BreezyFarm",
-            "processId": 12612,
-            "exited": true
-        },
-        {
-            "deviceId": "1WMHH847V71166",
-            "name": "com.lopez.BreezyFarm",
-            "processId": 13575,
-            "exited": true
-        },
-        {
-            "deviceId": "1WMHH847V71166",
-            "name": "com.lopez.BreezyFarm",
-            "processId": 14366,
-            "exited": true
-        },
-        {
-            "deviceId": "1WMHH847V71166",
-            "name": "com.lopez.BreezyFarm",
-            "processId": 15686,
-            "exited": true
-        },
-        {
-            "deviceId": "1WMHH847V71166",
-            "name": "com.oculus.os.clearactivity",
-            "processId": 14594,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHH847V71166",
-            "name": "com.lopez.BreezyFarm",
-            "processId": 17123,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHH847V71166",
-            "name": "com.lopez.BreezyFarm",
-            "processId": 18717,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHH847V71166",
-            "name": "com.lopez.BreezyFarm",
-            "processId": 19534,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHH847V71166",
-            "name": "com.lopez.BreezyFarm",
-            "processId": 20115,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHH847V71166",
-            "name": "com.lopez.BreezyFarm",
-            "processId": 20642,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHH847V71166",
-            "name": "com.lopez.BreezyFarm",
-            "processId": 21101,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHH847V71166",
-            "name": "com.lopez.BreezyFarm",
-            "processId": 5433,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHH847V71166",
-            "name": "com.lopez.BreezyFarm",
-            "processId": 6756,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHH847V71166",
-            "name": "com.lopez.BreezyFarm",
-            "processId": 7603,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHH847V71166",
-            "name": "com.lopez.BreezyFarm",
-            "processId": 8678,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHH847V71166",
-            "name": "com.lopez.BreezyFarm",
-            "processId": 11010,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHH847V71166",
-            "name": "com.lopez.BreezyFarm",
-            "processId": 11512,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHH847V71166",
-            "name": "com.lopez.BreezyFarm",
-            "processId": 13300,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHH847V71166",
-            "name": "com.lopez.BreezyFarm",
-            "processId": 13880,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHH847V71166",
-            "name": "com.lopez.BreezyFarm",
-            "processId": 14466,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHH847V71166",
-            "name": "com.lopez.BreezyFarm",
-            "processId": 17524,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHH847V71166",
-            "name": "com.lopez.BreezyFarm",
-            "processId": 19021,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHH847V71166",
-            "name": "com.lopez.BreezyFarm",
-            "processId": 20290,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHH847V71166",
-            "name": "com.lopez.BreezyFarm",
-            "processId": 20911,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHH847V71166",
-            "name": "com.lopez.BreezyFarm",
-            "processId": 21678,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHH847V71166",
-            "name": "com.lopez.BreezyFarm",
-            "processId": 23030,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHH847V71166",
-            "name": "com.lopez.BreezyFarm",
-            "processId": 23667,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHH847V71166",
-            "name": "com.lopez.BreezyFarm",
-            "processId": 25410,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHH847V71166",
-            "name": "com.lopez.BreezyFarm",
-            "processId": 27455,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHH847V71166",
-            "name": "com.lopez.BreezyFarm",
             "processId": 28767,
-            "exited": false
+            "exited": true
         },
         {
             "deviceId": "1WMHH847V71166",
             "name": "com.lopez.BreezyFarm",
             "processId": 29541,
-            "exited": false
+            "exited": true
         },
         {
             "deviceId": "1WMHH847V71166",
             "name": "com.lopez.BreezyFarm",
             "processId": 30302,
-            "exited": false
+            "exited": true
         },
         {
             "deviceId": "1WMHH847V71166",
             "name": "com.lopez.BreezyFarm",
             "processId": 30977,
+            "exited": true
+        },
+        {
+            "deviceId": "1WMHH847V71166",
+            "name": "com.lopez.BreezyFarm",
+            "processId": 7487,
+            "exited": true
+        },
+        {
+            "deviceId": "1WMHH847V71166",
+            "name": "com.oculus.os.clearactivity",
+            "processId": 5887,
             "exited": false
         }
     ],

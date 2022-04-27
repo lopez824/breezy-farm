@@ -14,6 +14,7 @@ public class Fleeing : State
     {
         // play fleeing animation
         // anim.SetTrigger();
+        ai.GetComponent<AI>().exclamAnim.Play("Exclamation");
         Debug.Log("DebugLog - Fleeing");
         base.Enter();
     }
