@@ -13,7 +13,7 @@ public class Airborne : State
     {
         // play thrown animation
         Debug.Log("DebugLog - Airborne");
-        anim.SetTrigger("isLanding");
+        anim.Play("Airborne State");
         base.Enter();
     }
 
@@ -30,7 +30,7 @@ public class Airborne : State
     public override void Exit()
     {
         // reset thrown animation
-        anim.ResetTrigger("isLanding");
+        anim.SetTrigger("isLanding");
         base.Exit();
     }
 }

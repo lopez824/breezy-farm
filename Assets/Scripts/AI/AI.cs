@@ -13,6 +13,7 @@ public class AI : MonoBehaviour
     public bool onLand = true;
     [HideInInspector]
     public bool inPen = false;
+    [HideInInspector]
     private Animator anim;
     private State currentState;
     private OVRGrabbable ovrGrabbable;
@@ -34,10 +35,11 @@ public class AI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        currentState = currentState.Process();
         if (ovrGrabbable.isGrabbed == true)
             isHeld = true;
         else
             isHeld = false;
+
+        currentState = currentState.Process();
     }
 }

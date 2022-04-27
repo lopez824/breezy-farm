@@ -203,7 +203,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5848076533691757917, guid: d0377a811c2a95841ba015ae0b2c8d45, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5848076533691757919, guid: d0377a811c2a95841ba015ae0b2c8d45, type: 3}
       propertyPath: m_RootOrder
@@ -634,7 +634,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!81 &87237201
 AudioListener:
   m_ObjectHideFlags: 0
@@ -642,7 +642,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 87237200}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!20 &87237202
 Camera:
   m_ObjectHideFlags: 0
@@ -4045,6 +4045,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 62661060}
     - target: {fileID: 2932512981542194572, guid: 7549852c34a375e43a571ad9b56c07e5, type: 3}
+      propertyPath: gameTimer
+      value: 
+      objectReference: {fileID: 1479316956}
+    - target: {fileID: 2932512981542194572, guid: 7549852c34a375e43a571ad9b56c07e5, type: 3}
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
@@ -5975,7 +5979,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1557028345
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8267,6 +8271,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 62661060}
     - target: {fileID: 2932512981542194572, guid: 7549852c34a375e43a571ad9b56c07e5, type: 3}
+      propertyPath: gameTimer
+      value: 
+      objectReference: {fileID: 1479316956}
+    - target: {fileID: 2932512981542194572, guid: 7549852c34a375e43a571ad9b56c07e5, type: 3}
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
@@ -8870,6 +8878,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7809987549592788323, guid: ad27c6582c1334744a8812236f698fab, type: 3}
+      propertyPath: timerPaused
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad27c6582c1334744a8812236f698fab, type: 3}
 --- !u!1 &2069868318
@@ -8925,6 +8937,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 62661060}
+    - target: {fileID: 2932512981542194572, guid: 7549852c34a375e43a571ad9b56c07e5, type: 3}
+      propertyPath: gameTimer
+      value: 
+      objectReference: {fileID: 1479316956}
     - target: {fileID: 2932512981542194572, guid: 7549852c34a375e43a571ad9b56c07e5, type: 3}
       propertyPath: m_Enabled
       value: 1
@@ -9290,6 +9306,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 62661060}
+    - target: {fileID: 2932512981542194572, guid: 7549852c34a375e43a571ad9b56c07e5, type: 3}
+      propertyPath: gameTimer
+      value: 
+      objectReference: {fileID: 1479316956}
     - target: {fileID: 2932512981542194572, guid: 7549852c34a375e43a571ad9b56c07e5, type: 3}
       propertyPath: m_Enabled
       value: 1
@@ -9731,6 +9751,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 62661060}
+    - target: {fileID: 2932512981542194572, guid: 7549852c34a375e43a571ad9b56c07e5, type: 3}
+      propertyPath: gameTimer
+      value: 
+      objectReference: {fileID: 1479316956}
     - target: {fileID: 2932512981542194572, guid: 7549852c34a375e43a571ad9b56c07e5, type: 3}
       propertyPath: m_Enabled
       value: 1

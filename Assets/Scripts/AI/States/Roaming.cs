@@ -14,7 +14,7 @@ public class Roaming : State
     {
         // play roaming animation
         anim.SetTrigger("isWalking");
-        Debug.Log("DebugLog - Roaming");
+        //Debug.Log("DebugLog - Roaming");
         if (ai.GetComponent<AI>().inPen == true)
             currentPoint = Random.Range(0, ai.GetComponent<AI>().penWaypoints.Length - 1);
         else

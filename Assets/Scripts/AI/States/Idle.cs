@@ -12,7 +12,7 @@ public class Idle : State
     public override void Enter()
     {
         // play idle animation
-        Debug.Log("DebugLog - Idle");
+        //Debug.Log("DebugLog - Idle");
         anim.SetTrigger("isIdle");
         base.Enter();
     }
