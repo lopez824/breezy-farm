@@ -7,7 +7,7 @@ public class Roaming : State
     public Roaming(GameObject _npc, Animator _anim, Transform _player, GameObject[] _waypoints) : base(_npc, _anim, _player, _waypoints)
     {
         name = STATE.ROAMING;
-        speed = 1;
+        speed = 0.75f;
     }
 
     public override void Enter()

@@ -1,9 +1,9 @@
 {
     "m_SelectedDeviceId": "1WMHH847V71166",
     "m_SelectedPackage": {
-        "deviceId": "",
-        "name": "",
-        "processId": 0,
+        "deviceId": "1WMHH847V71166",
+        "name": "com.lopez.BreezyFarm",
+        "processId": 5075,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -42,6 +42,24 @@
             "deviceId": "1WMHH847V71166",
             "name": "com.oculus.os.clearactivity",
             "processId": 5887,
+            "exited": false
+        },
+        {
+            "deviceId": "1WMHH847V71166",
+            "name": "com.lopez.BreezyFarm",
+            "processId": 9678,
+            "exited": false
+        },
+        {
+            "deviceId": "1WMHH847V71166",
+            "name": "com.lopez.BreezyFarm",
+            "processId": 4502,
+            "exited": false
+        },
+        {
+            "deviceId": "1WMHH847V71166",
+            "name": "com.lopez.BreezyFarm",
+            "processId": 5075,
             "exited": false
         }
     ],

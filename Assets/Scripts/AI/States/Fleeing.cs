@@ -7,7 +7,7 @@ public class Fleeing : State
     public Fleeing(GameObject _npc, Animator _anim, Transform _player, GameObject[] _waypoints) : base(_npc, _anim, _player, _waypoints)
     {
         name = STATE.FLEEING;
-        speed = 2;
+        speed = 1.5f;
     }
 
     public override void Enter()
