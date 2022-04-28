@@ -3,7 +3,7 @@
     "m_SelectedPackage": {
         "deviceId": "1WMHH847V71166",
         "name": "com.lopez.BreezyFarm",
-        "processId": 5075,
+        "processId": 5423,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -60,6 +60,12 @@
             "deviceId": "1WMHH847V71166",
             "name": "com.lopez.BreezyFarm",
             "processId": 5075,
+            "exited": false
+        },
+        {
+            "deviceId": "1WMHH847V71166",
+            "name": "com.lopez.BreezyFarm",
+            "processId": 5423,
             "exited": false
         }
     ],
