@@ -7,6 +7,10 @@ public class AI : MonoBehaviour
     public Transform player;
     public Animator anim;
     public Animator exclamAnim;
+    public AudioSource sfx;
+    public AudioClip[] grunts;
+    public AudioClip[] oinks;
+    public AudioClip[] squeals;
     public GameObject[] waypoints;
     public GameObject[] penWaypoints;
     [HideInInspector]

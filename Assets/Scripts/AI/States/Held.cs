@@ -4,16 +4,22 @@ using UnityEngine;
 
 public class Held : State
 {
-    public Held(GameObject _npc, Animator _anim, Transform _player, GameObject[] _waypoints) : base(_npc, _anim, _player, _waypoints)
+    private AudioClip oink;
+    private AudioSource audioSource;
+
+    public Held(GameObject _ai, Animator _anim, Transform _player, GameObject[] _waypoints) : base(_ai, _anim, _player, _waypoints)
     {
         name = STATE.HELD;
+        oink = ai.GetComponent<AI>().oinks[3];
+        audioSource = ai.GetComponent<AudioSource>();
     }
 
     public override void Enter()
     {
         // play held animation
-        // anim.SetTrigger();
         Debug.Log("DebugLog - Held");
+
+        audioSource.PlayOneShot(oink);
         ai.GetComponent<AI>().onLand = false;
         base.Enter();
     }

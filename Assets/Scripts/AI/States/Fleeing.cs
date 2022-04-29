@@ -4,18 +4,26 @@ using UnityEngine;
 
 public class Fleeing : State
 {
-    public Fleeing(GameObject _npc, Animator _anim, Transform _player, GameObject[] _waypoints) : base(_npc, _anim, _player, _waypoints)
+    private AudioClip[] grunts;
+    private AudioSource audioSource;
+
+    public Fleeing(GameObject _ai, Animator _anim, Transform _player, GameObject[] _waypoints) : base(_ai, _anim, _player, _waypoints)
     {
         name = STATE.FLEEING;
         speed = 1.5f;
+        grunts = ai.GetComponent<AI>().grunts;
+        audioSource = ai.GetComponent<AudioSource>();
     }
 
     public override void Enter()
     {
         // play fleeing animation
-        // anim.SetTrigger();
-        ai.GetComponent<AI>().exclamAnim.Play("Exclamation");
         Debug.Log("DebugLog - Fleeing");
+
+        int rng = Random.Range(0, 1);
+        audioSource.PlayOneShot(grunts[rng]);
+
+        ai.GetComponent<AI>().exclamAnim.Play("Exclamation");
         base.Enter();
     }
 

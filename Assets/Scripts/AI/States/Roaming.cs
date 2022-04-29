@@ -4,10 +4,15 @@ using UnityEngine;
 
 public class Roaming : State
 {
-    public Roaming(GameObject _npc, Animator _anim, Transform _player, GameObject[] _waypoints) : base(_npc, _anim, _player, _waypoints)
+    private AudioClip[] oinks;
+    private AudioSource audioSource;
+
+    public Roaming(GameObject _ai, Animator _anim, Transform _player, GameObject[] _waypoints) : base(_ai, _anim, _player, _waypoints)
     {
         name = STATE.ROAMING;
         speed = 0.75f;
+        oinks = ai.GetComponent<AI>().oinks;
+        audioSource = ai.GetComponent<AudioSource>();
     }
 
     public override void Enter()
@@ -50,6 +55,9 @@ public class Roaming : State
             // move to next point
             if (Random.Range(0, 100) < 20f)
             {
+                int rng = Random.Range(0, 2);
+                audioSource.PlayOneShot(oinks[rng]);
+
                 nextState = new Idle(ai, anim, player, waypoints);      // randomly decide when to roam
                 stage = EVENT.EXIT;
             }

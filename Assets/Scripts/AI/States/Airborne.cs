@@ -4,9 +4,14 @@ using UnityEngine;
 
 public class Airborne : State
 {
-    public Airborne(GameObject _npc, Animator _anim, Transform _player, GameObject[] _waypoints) : base(_npc, _anim, _player, _waypoints)
+    private AudioClip[] squeals;
+    private AudioSource audioSource;
+
+    public Airborne(GameObject _ai, Animator _anim, Transform _player, GameObject[] _waypoints) : base(_ai, _anim, _player, _waypoints)
     {
         name = STATE.THROWN;
+        squeals = ai.GetComponent<AI>().squeals;
+        audioSource = ai.GetComponent<AudioSource>();
     }
 
     public override void Enter()
@@ -14,6 +19,9 @@ public class Airborne : State
         // play thrown animation
         Debug.Log("DebugLog - Airborne");
         anim.Play("Airborne State");
+
+        int rng = Random.Range(0, 1);
+        audioSource.PlayOneShot(squeals[rng]);
         base.Enter();
     }
 
