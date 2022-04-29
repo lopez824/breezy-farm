@@ -4,11 +4,19 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    public Animator millAnim;
+    public GameObject wind;
+    public List<ParticleSystem> windEffects;
 
-    // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
-        millAnim.Play("mill");
+        foreach (ParticleSystem wind in windEffects)
+            StartCoroutine(startVFX(wind));
+    }
+
+    private IEnumerator startVFX(ParticleSystem wind)
+    {
+        float randomSeconds = Random.value * 5;
+        yield return new WaitForSeconds(randomSeconds);
+        wind.gameObject.SetActive(true);
     }
 }
