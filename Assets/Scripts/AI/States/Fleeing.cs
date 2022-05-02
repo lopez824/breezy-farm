@@ -23,7 +23,7 @@ public class Fleeing : State
         int rng = Random.Range(0, 1);
         audioSource.PlayOneShot(grunts[rng]);
 
-        ai.GetComponent<AI>().exclamAnim.Play("Exclamation");
+        ai.GetComponent<AI>().exclamAnim.SetTrigger("isFleeing");
         base.Enter();
     }
 
@@ -47,7 +47,7 @@ public class Fleeing : State
     public override void Exit()
     {
         // reset fleeing animation
-        // anim.ResetTrigger();
+        ai.GetComponent<AI>().exclamAnim.ResetTrigger("isFleeing");
         base.Exit();
     }
 }

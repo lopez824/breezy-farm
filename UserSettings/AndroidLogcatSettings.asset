@@ -2,8 +2,8 @@
     "m_SelectedDeviceId": "1WMHH847V71166",
     "m_SelectedPackage": {
         "deviceId": "1WMHH847V71166",
-        "name": "com.lopez.BreezyFarm",
-        "processId": 6085,
+        "name": "com.lopez.PiggyWrangler",
+        "processId": 8080,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -90,6 +90,18 @@
             "deviceId": "1WMHH847V71166",
             "name": "com.lopez.BreezyFarm",
             "processId": 6085,
+            "exited": false
+        },
+        {
+            "deviceId": "1WMHH847V71166",
+            "name": "com.lopez.PiggyWrangler",
+            "processId": 6744,
+            "exited": false
+        },
+        {
+            "deviceId": "1WMHH847V71166",
+            "name": "com.lopez.PiggyWrangler",
+            "processId": 8080,
             "exited": false
         }
     ],
